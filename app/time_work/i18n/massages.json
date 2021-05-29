@@ -1,0 +1,22 @@
+{"Th": {
+        "domain": "Time_work",
+        "list": "รายการข้อมูล Time_work",
+        "show": "แสดงข้อมูล Time_work",
+        "create": " เพิ่มข้อมูล Time_work",
+        "edit": "แก้ไขข้อมูล Time_work",
+        "date_work_id": "date_work_id",
+        "time_start": "time_start",
+        "time_end": "time_end",
+        "people": "people"
+    },"En": {
+        "domain": "Time_work",
+        "list": "List Time_work",
+        "show": "Detail Time_work",
+        "create": "Create Time_work",
+        "edit": "Edit Time_work",
+        "date_work_id": "Date_work_id",
+        "time_start": "Time_start",
+        "time_end": "Time_end",
+        "people": "People"
+    }
+}

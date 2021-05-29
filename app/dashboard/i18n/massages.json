@@ -1,0 +1,26 @@
+{
+    "Th": {
+        "domain": "Dashboard",
+        "list": "จำนวนผู้จองวัคซีน",
+        "show": "แสดงข้อมูล Dashboard",
+        "create": " เพิ่มข้อมูล Dashboard",
+        "edit": "แก้ไขข้อมูล Dashboard",
+        "table": "คำตอบทั้งหมด",
+        "table2": "คำตอบทั้งหมด แยกตามหน่วยงาน",
+        "degree": "คำตอบแยกตามหลักสูตร",
+        "degree_faculty": "คำตอบแยกตามสำนัก",
+        "id": "id"
+    },
+    "En": {
+        "domain": "Dashboard",
+        "list": "List Dashboard",
+        "show": "Detail Dashboard",
+        "create": "Create Dashboard",
+        "edit": "Edit Dashboard",
+        "table": "คำตอบทั้งหมด",
+        "table2": "คำตอบทั้งหมด แยกตามหน่วยงาน",
+        "degree": "คำตอบแยกตามหลักสูตร",
+        "degree_faculty": "คำตอบแยกตามสำนัก",
+        "id": "Id"
+    }
+}

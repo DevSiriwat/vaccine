@@ -1,0 +1,24 @@
+{"Th": {
+        "domain": "Employee",
+        "list": "รายการข้อมูล Employee",
+        "show": "แสดงข้อมูล Employee",
+        "create": " เพิ่มข้อมูล Employee",
+        "edit": "แก้ไขข้อมูล Employee",
+        "id": "id",
+        "employee_id": "employee_id",
+        "name": "name",
+        "phone": "phone",
+        "email": "email"
+    },"En": {
+        "domain": "Employee",
+        "list": "List Employee",
+        "show": "Detail Employee",
+        "create": "Create Employee",
+        "edit": "Edit Employee",
+        "id": "Id",
+        "employee_id": "Employee_id",
+        "name": "Name",
+        "phone": "Phone",
+        "email": "Email"
+    }
+}

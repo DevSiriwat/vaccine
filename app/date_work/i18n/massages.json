@@ -1,0 +1,16 @@
+{"Th": {
+        "domain": "Date_work",
+        "list": "รายการข้อมูล Date_work",
+        "show": "แสดงข้อมูล Date_work",
+        "create": " เพิ่มข้อมูล Date_work",
+        "edit": "แก้ไขข้อมูล Date_work",
+        "date": "date"
+    },"En": {
+        "domain": "Date_work",
+        "list": "List Date_work",
+        "show": "Detail Date_work",
+        "create": "Create Date_work",
+        "edit": "Edit Date_work",
+        "date": "Date"
+    }
+}

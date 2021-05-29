@@ -1,0 +1,20 @@
+{"Th": {
+        "domain": "Book",
+        "list": "รายการข้อมูล Book",
+        "show": "แสดงข้อมูล Book",
+        "create": " เพิ่มข้อมูล Book",
+        "edit": "แก้ไขข้อมูล Book",
+        "employee_id": "employee_id",
+        "date_work_id": "date_work_id",
+        "time_work_id": "time_work_id"
+    },"En": {
+        "domain": "Book",
+        "list": "List Book",
+        "show": "Detail Book",
+        "create": "Create Book",
+        "edit": "Edit Book",
+        "employee_id": "Employee_id",
+        "date_work_id": "Date_work_id",
+        "time_work_id": "Time_work_id"
+    }
+}

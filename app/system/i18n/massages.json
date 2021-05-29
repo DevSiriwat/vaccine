@@ -1,0 +1,34 @@
+{
+    "Th": {
+        "domain": "ระบบจองวัคซีน covid - 19",
+        "save": "บันทึก",
+        "directions": "คำชี้แจง",
+        "directions_detail": "ระบบจองวัคซีน covid - 19 ท่านสามารถจองได้เพียง 1 วัน และ 1 ช่วงเวลาเท่านั้น",
+        "part_one": "ส่วนที่ 1",
+        "please_select_date": "* กรุณาเลือกวันที่จะจองวัคซีน",
+        "date": "วันที่",
+        "please_select_degree": "กรุณาเลือกวันที่ฉีดวัคซีน",
+        "part_two": "ส่วนที่ 2",
+        "please_select_time": "* กรุณาเลือกเวลาจะจองวัคซีน",
+        "time": "ช่วงเวลา",
+        "part_three": "ส่วนที่ 3",
+        "please_select_employee": "* กรุณากรอกรหัสพนักงาน",
+        "employee": "รหัสพนักงาน"
+    },
+    "En": {
+        "domain": "Covid vaccine reservation system - 19",
+        "save": "Save",
+        "directions": "Directions",
+        "directions_detail": "ระบบจองวัคซีน covid - 19 ท่านสามารถจองได้เพียง 1 วัน และ 1 ช่วงเวลาเท่านั้น",
+        "part_one": "ส่วนที่ 1",
+        "please_select_date": "* กรุณาเลือกวันที่จะจองวัคซีน",
+        "date": "วันที่",
+        "please_select_degree": "กรุณาเลือกวันที่ฉีดวัคซีน",
+        "part_two": "ส่วนที่ 2",
+        "please_select_time": "* กรุณาเลือกเวลาจะจองวัคซีน",
+        "time": "ช่วงเวลา",
+        "part_three": "ส่วนที่ 3",
+        "please_select_employee": "* กรุณากรอกรหัสพนักงาน",
+        "employee": "รหัสพนักงาน"
+    }
+}
