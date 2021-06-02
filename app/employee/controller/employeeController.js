@@ -95,8 +95,8 @@ angular.module("myApp").controller("employeeController", ["$scope", "$http", "$w
 	$scope.updateEmployee= function(){
 		console.log("updateEmployee");
 		$http({
-			method: "POST",
-			url: "http://ascend.sut.ac.th/rest-api/employee",
+			method: "GET",
+			url: "http://ascend.sut.ac.th/rest-api/employee/",
 			headers: {"Content-Type": "application/x-www-form-urlencoded"}
 		}).then(function successCallback(response) {
 			console.log(response.data)
@@ -110,6 +110,22 @@ angular.module("myApp").controller("employeeController", ["$scope", "$http", "$w
 			console.log(error);
 		});
 	};
+
+	// $scope.testListEmployee= function(){
+	// 	console.log("testListEmployee");
+	// 	$http({
+	// 		method: "GET",
+	// 		url: "http://ascend.sut.ac.th/rest-api/employee/",
+	// 		headers: {"Content-Type": "application/x-www-form-urlencoded"}
+	// 	}).then(function successCallback(response) {
+	// 		console.log(response.data)
+			
+	// 	}, function errorCallback(error) {
+	// 		$scope.displayNotify('error', "เกิดข้อผิดพลาด!! ในการแสดรายการข้อมูล employee ");
+	// 		console.log("employeeController list ERROR!!!");
+	// 		console.log(error);
+	// 	});
+	// };
 
 	$scope.insertEmployee= function(data, act=false){
 		console.log("insertEmployee");
