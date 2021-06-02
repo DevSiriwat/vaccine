@@ -94,13 +94,13 @@ $LANG = isset($_SESSION['LANG']) ? $_SESSION['LANG'] : "Th";
 
 		<nav id="navbar" class="navbar">
 			<ul>
-			<li><a class="getstarted scrollto" href="/vaccine/auth/">LOGIN</a></li>
-			<li class="dropdown"><a href=""><span>{{LANG}}</span> <i class="bi bi-chevron-down"></i></a>
+			<!-- <li><a class="getstarted scrollto" href="/vaccine/auth/">LOGIN</a></li> -->
+			<!-- <li class="dropdown"><a href=""><span>{{LANG}}</span> <i class="bi bi-chevron-down"></i></a>
 				<ul>
 					<li><a href="">{{LANG}}</a></li>
 					<li><a href="" ng-repeat="la in languageList | filter: '!'+LANG " ng-click="setLang(la);">{{la}}</a></li>
 				</ul>
-			</li>
+			</li> -->
 			</ul>
 			<i class="bi bi-list mobile-nav-toggle"></i>
 		</nav><!-- .navbar -->
@@ -115,74 +115,69 @@ $LANG = isset($_SESSION['LANG']) ? $_SESSION['LANG'] : "Th";
 		<!-- ======= Counts Section ======= -->
 		<br><br>
 		<form method="POST"  ng-submit="bookInsert(book);">
-		<section id="counts" class="counts">
-		<div class="container" data-aos="fade-up">
+			<section id="counts" class="counts">
+				<div class="container" data-aos="fade-up">
 
-			<div class="row gy-4">
+					<div class="row gy-4">
 
-			<div class="col-lg-12 col-md-12">
-				<div class="count-box">
-				<!-- <i class="bi bi-emoji-smile"></i> -->
-				<div>
-				<h3 class="text-center"><b>{{ massages.system.domain }}</b></h3>
-				<hr>
-            	<h5><b>{{ massages.system.directions }}</h5></b> <h5> {{ massages.system.directions_detail  }} </h5>
-					<!-- <span class="purecounter">ddd</span> -->
-					<!-- <p>Happy Clients</p> -->
-				</div>
-				</div>
-			</div>
+						<!-- <div class="col-lg-12 col-md-12">
+							<div class="count-box">
+								<div>
+									<h3 class="text-center"><b>{{ massages.system.domain }}</b></h3>
+									<hr>
+									<h5><b>{{ massages.system.directions }}</h5></b> <h5> {{ massages.system.directions_detail  }} </h5>
+								</div>
+							</div>
+						</div> -->
 
-			<div class="col-lg-12 col-md-12">
-				<div class="count-box">
-				<h5><b>{{ massages.system.part_one }}</b></h5>
-				<span  class="text-danger">{{ massages.system.please_select_employee }}</span>
-                <h5>{{ massages.system.employee }}</h5>
-                <input type="text" class="form-control" id="employee_id" class="form-control" name="employee_id" ng-model="book.employee_id" required><br>
-				</div>
-			</div>
+						<!-- <div class="col-lg-12 col-md-12">
+							<div class="count-box">
+								<h5><b>{{ massages.system.part_one }}</b></h5>
+								<span  class="text-danger">{{ massages.system.please_select_employee }}</span>
+								<h5>{{ massages.system.employee }}</h5>
+								<input type="text" class="form-control" id="employee_id" class="form-control" name="employee_id" ng-model="book.employee_id" required><br>
+							</div>
+						</div> -->
 
-			<div class="col-lg-12 col-md-12">
-				<div class="count-box">
-				<!-- <i class="bi bi-journal-richtext" style="color: #ee6c20;"></i> -->
-				<div>
-				<h5><b>{{ massages.system.part_two }}</b></h5>
-				<span  class="text-danger">{{ massages.system.please_select_date }}</span>
-                <h5>{{ massages.system.date }}</h5>
-				<div>
-				<select ui-select2 ng-model="book.date_work_id" data-placeholder="" class="col-sm-12" style="padding-right: 0px; padding-left:0px; width: 100%;" ng-change="dataTimeList(book.date_work_id);">
-					<option value="">กรุณาเลือกวันที่ฉีดวัคซีน</option>
-					<option ng-repeat="date in dataInstanceDateList" value="{{date.id}}">{{ date.date }}</option>
-				</select>
-				</div>
-				</div>
-				</div>
-			</div>
+						<!-- <div class="col-lg-12 col-md-12">
+							<div class="count-box">
+								<div>
+									<h5><b>{{ massages.system.part_two }}</b></h5>
+									<span  class="text-danger">{{ massages.system.please_select_date }}</span>
+									<h5>{{ massages.system.date }}</h5>
+									<div>
+										<select ui-select2 ng-model="book.date_work_id" data-placeholder="" class="col-sm-12" style="padding-right: 0px; padding-left:0px; width: 100%;" ng-change="dataTimeList(book.date_work_id);">
+											<option value="">กรุณาเลือกวันที่ฉีดวัคซีน</option>
+											<option ng-repeat="date in dataInstanceDateList" value="{{date.id}}">{{ date.date }}</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div> -->
 
-			<div class="col-lg-12 col-md-12">
-				<div class="count-box">
-				<!-- <i class="bi bi-journal-richtext" style="color: #ee6c20;"></i> -->
-				<div>
-				<h5><b>{{ massages.system.part_three }}</b></h5>
-				<span  class="text-danger">{{ massages.system.please_select_time }}</span>
-                <h5>{{ massages.system.time }}</h5>
-				<div>
-				<select ui-select2 ng-model="book.time_work_id" data-placeholder="" class="col-sm-12" style="padding-right: 0px; padding-left:0px; width: 100%;">
-					<option value="">กรุณาเลือกเวลาฉีดวัคซีน</option>
-					<option ng-repeat="time in dataInstanceTimeList" value="{{time.id}}">{{ time.time_start+" "+"-"+" "+time.time_end }}</option>
-				</select>
-				</div>
-				</div>
-				</div>
-			</div>
-			<!-- <div class="col-lg-12 col-md-12" style="text-align:right;"> -->
-			<div class="col-lg-12 col-md-12">
-				<button type="submit" style="width: 100%;">{{ massages.system.save }}</button>
-			</div>
-			</div>
+						<!-- <div class="col-lg-12 col-md-12">
+							<div class="count-box">
+								<div>
+									<h5><b>{{ massages.system.part_three }}</b></h5>
+									<span  class="text-danger">{{ massages.system.please_select_time }}</span>
+									<h5>{{ massages.system.time }}</h5>
+									<div>
+										<select ui-select2 ng-model="book.time_work_id" data-placeholder="" class="col-sm-12" style="padding-right: 0px; padding-left:0px; width: 100%;">
+											<option value="">กรุณาเลือกเวลาฉีดวัคซีน</option>
+											<option ng-repeat="time in dataInstanceTimeList" value="{{time.id}}">{{ time.time_start+" "+"-"+" "+time.time_end }}</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div> -->
 
-		</div>
-		</section>
+						<!-- <div class="col-lg-12 col-md-12">
+							<button type="submit" style="width: 100%;">{{ massages.system.save }}</button>
+						</div> -->
+					</div>
+
+				</div>
+			</section>
 		</form>
 
 	</main><!-- End #main -->

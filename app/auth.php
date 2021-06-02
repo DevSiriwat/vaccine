@@ -64,14 +64,14 @@ $LANG = isset($_SESSION['LANG']) ? $_SESSION['LANG'] : "Th";
 					<div class="card-body">
 						<!-- <img src="<?php //echo $ASSETS_URL; ?>assets/images/logosut.png" alt="" class="img-fluid mb-4" style="height: 6rem;"> -->
 						<img src="<?php echo $ASSETS_URL; ?>assets/images/auth/auth-logo-dark.png" alt="" class="img-fluid mb-4" style="height: 6rem;">
-						<h4 class="mb-3 f-w-400">เข้าสู่ระบบ</h4>
-						<h5 >ระบบจองวัคซีน</h5>
+						<!-- <h4 class="mb-3 f-w-400">เข้าสู่ระบบ</h4> -->
+						<!-- <h5 >ระบบจองวัคซีน</h5> -->
 
 						<form name="formAuth" ng-submit="auth(user);" method="POST" accept-charset="utf-8">
 
 						
 							<div class="form-group mb-3 text-left">
-								<label class="" for="username">รหัสพนักงาน</label>
+								<!-- <label class="" for="username">รหัสพนักงาน</label> -->
 								<input type="text" class="form-control" id="username" ng-model="user.username" required="required" placeholder="" autofocus="true">
 							</div>
 							<!-- <div class="custom-control custom-checkbox text-left mb-4 mt-2">
@@ -138,10 +138,10 @@ angular.module('myApp', ['ngNotify']).controller('loginController', ["$scope", "
 			data: $.param(auth),
 			headers: {"Content-Type": "application/x-www-form-urlencoded"}
 		}).then(function successCallback(response) {
-			// console.log(response.data);
-			if (response.data.status == 1){
-				$window.location.href = PATH+"booking/list/";
-			}
+			console.log(response.data);
+			// if (response.data.status == 1){
+			// 	$window.location.href = PATH+"booking/list/";
+			// }
 		}, function errorCallback(response) {
 			// console.log(response);
 			console.log("loginController setSession ERROR!!!");
